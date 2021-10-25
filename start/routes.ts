@@ -22,6 +22,9 @@ import Route from '@ioc:Adonis/Core/Route'
 // import 'App/Modules/User/routes'
 //NOTE: have added this url inside the adonisrc.json and it works
 import 'App/Modules/Cart/routes'
+import 'App/Modules/Product/routes'
+import 'App/Modules/Category/routes'
+
 Route.get('/', async () => {
   return { hello: 'world' }
 })

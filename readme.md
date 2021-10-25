@@ -26,3 +26,12 @@ console.log(Application.version!.patch)
 1.
 2. Rename Controller to 'Controllers' as this is the default directory
 3. Register as a preload file for routes everytime or simply import in start/routes.jsx
+
+## Database
+
+file:///tmp/adonis-1635008838207.html
+
+sudo mysql -u root
+password for root[sudo]
+
+└─$ sudo /opt/lampp/lampp start

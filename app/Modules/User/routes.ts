@@ -1,4 +1,5 @@
 import Route from '@ioc:Adonis/Core/Route'
+import Database from '@ioc:Adonis/Lucid/Database'
 
 Route.get('/users/:id', 'UsersController.show')
 Route.group(() => {
@@ -6,8 +7,11 @@ Route.group(() => {
   Route.get('/posts', 'PostsController.index')
 }).prefix('/api')
 
-Route.get('/posts', () => {
-  return '<h1> This is the heading</h1>'
+Route.get('posts', async () => {
+  return Database.table('posts').insert({
+    name: 'Adonis 101',
+    rollno: 12,
+  })
 })
 
 Route.get('/posts/create', () => {
